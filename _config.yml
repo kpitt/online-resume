@@ -15,12 +15,15 @@ about: false # set to False or comment line if you want to remove the "How to us
 
 #Profile information
 name: Alan Doe
-tagline: Full Stack Developer
+tagline: Senior Software Engineer
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-summary: 'Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-You can <a href="#" target="_blank">download this free resume/CV template here</a>. Aenean
-commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.'
+summary: 'Talented senior developer, architect, and technical leader with over 25 years of progressive experience
+across the entire product development cycle. Recognized as an expert in analysis, architecture, design, and
+implementation of n-tier Web applications, Windows GUI applications, and Windows services. Reputation for delivering
+innovative solutions for the most complex and high profile projects. Proven ability to learn and become productive
+quickly with new technologies and environments. Outstanding technical expertise and industry knowledge in enterprise
+application security and retail technology solutions. Excellent communication and presentation skills, including
+project presentations, training sessions, and technical documentation.'
 
 #sidebar links
 email: hello@webjeda.com
