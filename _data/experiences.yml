@@ -1,28 +1,141 @@
 - experience:
-  role: Lead Developer
-  time: 2015 - Present
-  company: Startup Hubs, San Francisco
-  details: "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing
-  elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-  pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-  <br> <br>
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-  laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-  architecto beatae vitae dicta sunt explicabo."
+  role: Senior Software Engineer / Architect
+  time: 2002 - Present
+  company: |
+    Micro Focus, Alpharetta, GA<br>
+    Hewlett Packard Enterprise (2015 - 2017)<br>
+    Hewlett-Packard (2007 - 2015)<br>
+    SPI Dynamics, Inc. (2002 - 2007)
+  details: |
+    Hewlett-Packard purchased SPI Dynamics in 2007, and the development team continued to
+    work on the SPI Dynamics product suite as part of HP. I have been a technical leader
+    for a variety of application security products, primarily focused on the architecture
+    and implementation of back-end processing and database management for web-based
+    solutions. In addition to my primary product responsibilities, I have also contributed
+    to many other related products and development efforts within our organization
+    including WebInspect, QAInspect, and SCA.
+
+    **Fortify on Demand (FoD)**<br>
+    Fortify on Demand is a hosted SaaS web application written in C# and ASP.NET with data stored in SQL Server. FoD allows customers to purchase security assessments of their web sites and source code. Vulnerability scans are run by an automated scan farm or a human operator. The results are then reviewed by a security professional and provided back to the customer through the FoD portal. The FoD application manages customer interaction, automated scanning, and workflows for the security personnel who perform the assessments.
+    - Implemented a new automated deployment process based on Octopus Deploy that significantly improved the reliability and decreased the manual effort required for QA to upgrade test environments. Currently working with the Operations team to get the same deployment process implemented for the production environments.
+    - Enhanced the white-label rebranding capabilities of the Fortify on Demand product to enable several major deals with third-party resellers and service providers.
+
+    **Software Security Center (SSC)**<br>
+    Software Security Center is a typical 3-tier web application written. The back-end server is written in Java and supports several database servers including SQL Server, Oracle and MySQL. The front-end was written primarily in Adobe Flex, but is being migrated to HTML and JavaScript. The application allows customers to upload the results of security scans and then review details about current issues. It also keeps track of the current status of issues found in previous scans and tracks the trend in the number of vulnerabilities over time.
+    - Developed a job recovery mechanism that could automatically restart a failed job from the last stable checkpoint, making the system much more resilient to temporary failures such as database connection errors and server reboots.
+    - Addressed a long-standing issue with the reliability and performance of scan results processing through an extensive effort of load testing, database optimization, improved transaction management, and better algorithms. Improved reliability from as little as 50% for extremely large scans to near 100%, and also increased the average throughput by a factor of 5x to 10x.
+    - Led a widespread refactoring effort to make the code base more stable, more maintainable, and easier to extend by improving the code structure and reducing cyclic dependencies.
+    - Improved developer efficiency by significantly reducing turnaround time to build and test code changes. Specific improvements included a much faster Gradle-based build process and the ability to build and run the system from inside the IDE.
+    - Developed a proof-of-concept clustered FPR processing system using JPPF to investigate the benefits of improved scalability for the SSC back-end.
+    - Served as the highest level of engineering escalation to support high-value and at-risk customers with critical issues.
+    - Recognized as a subject-matter expert on the entire SSC system. Provided background information, architectural guidance, and implementation feedback for other developers working on new features and customer support issues.
+    - Provided training and support to on-board a new development team in Prague.
+
+    **Assessment Management Platform (AMP)**<br>
+    AMP was a platform for managing WebInspect security scans of web applications, collecting the scan results, and presenting the results to the end user. It originally began as a client/server application written in C# using .NET Remoting and SQL Server database storage. It was later converted to a web-based application using ASP.NET.
+    - Part of a small team that defined and developed the first version of the Assessment Management Platform (AMP). Implemented a significant portion of the back-end components for the first release.
+    - Designed and developed the WebInspect Sensor service, which allowed AMP to control headless instances of WebInspect for automated scanning.
+    - Implemented a recoverable communication protocol that allowed large scan results files to be reliably transmitted from the WebInspect scanners to the AMP server regardless of network failures, server or scanner crashes, reboots and power failures.
+    - Built a scan controller that supported scheduling WebInspect scans to run on a recurring basis, distributing the scans to a farm of WebInspect Sensors for execution based on priority, and automatically pausing and resuming scans according to blackout periods such as working hours when security scanning should not take place.
+    - Developed an automatic update mechanism for collecting updated software and vulnerability checks from a central server and distributing it to all of the WebInspect scanners without human intervention.
+    - Converted all of the Microsoft Remoting interfaces to SOAP web services to allow the AMP server to run as a web-based application and to open up the interfaces for third-party integration.
+    - Implemented an update approval interface that allowed the AMP administrator to control which versions of the WebInspect software would be distributed to the scanner machines, and also to test new software versions on a subset of the scanners before approving them for the entire scan farm.
+    - Worked closely with the WebInspect team to design and develop a new version of the central update service that used significantly less storage for software updates and provided more detailed information to customers about each update.
+    - Developed license management support to control the number of users and scanners that could be connected to an AMP system based on purchased limits.
+    - Built importers to load WebInspect scan results into the AMP database.
+    - Made significant improvements to the web UI code to improve layout consistency across multiple browsers.
+    - Coordinated with other development teams to ensure compatible integrations between AMP and other products such as WebInspect and QAInspect.
+    - Served as a technical knowledge resource for other developers and support personnel regarding the architecture and implementation of AMP, and guided many of the architectural decisions.
+    - Performed code reviews to provide feedback on design and implementation, and to help improve code quality throughout the system.
+    - Provided engineering support for many high-priority and difficult-to-solve customer support cases.
+
+    **WebInspect Enterprise**<br>
+    In 2010, Hewlett-Packard purchased another application security company, Fortify Software, and combined the Fortify team with the former SPI Dynamics team to form a larger security organization. There was significant overlap between the functionality provided by AMP and the Fortify Software Security Center, so it was decided to remove redundant functionality from the AMP product and rebrand it as WebInspect Enterprise. WebInspect Enterprise is marketed as an add-on to the SSC system for managing dynamic web site scans.
+    - Independently learned the SSC system and led the implementation of improved support for WebInspect scan results in order to support WebInspect Enterprise.
+    - Designed and developed an initial version of WebInspect Enterprise that could run in full AMP mode for existing AMP customers or in limited WebInspect Enterprise mode for SSC customers based on license type.
+    - Developed an exporter to convert WebInspect scan results to a format that could be uploaded into Software Security Center. Also built an equivalent exporter for WebInspect to allow direct upload of individual scans into SSC for customers who do not use WebInspect Enterprise for large-scale scanning.
+
+    **WebDefend**<br>
+    WebDefend was an early effort to develop a Web Application Firewall. Primarily responsible for developing the management console in C# and Windows Forms. The management console was responsible for configuring the system, collecting security events from the detector agents, logging the security events into a database, and providing alerting mechanisms for possible intrusion attempts. Also developed the Managed C++ component that integrated the native-code detector agents with the .NET management console.
+
+- experience:
+  role: System Architect / Consulting Software Engineer
+  time: 1998 - 2002
+  company: NCR Corporation, Duluth, GA
+  details: |
+    Technical leader developing Intranet Web applications and Windows applications for a
+    leading provider of computer technology for the retail industry. Defined solution
+    architectures, oversaw requirements analysis and design efforts, and provided
+    technical consultation for a team of 6 to 17 developers. Researched new technologies
+    and defined roadmaps for incorporating technologies into products. Coordinated with
+    product management, UI designers, graphic artists, and third-party partners to
+    deliver complete customer solutions. Knowledge resource to other developers for
+    design and implementation issues in C++, COM, Active Server Pages, and many other
+    Microsoft and Internet technologies.
+    - Technical lead for product definition and development of n-tier Intranet
+      applications that provide information to retail customers on touch-screen kiosks
+      located in retail stores. Responsible for evaluation and selection of technologies,
+      defining high-level architecture, and developing key modules using DHTML,
+      JavaScript, IIS, Active Server Pages, VBScript, COM, ADO, and Microsoft SQL Server.
+      The product opened a new, multi-million dollar market for retail computing
+      technology.
+    - Developed COM business logic components using C++ and ATL to support Intranet
+      applications.
+    - Led development of a takeaway belt system for a self-checkout retail application
+      using C++ and MFC. Worked to understand an unfamiliar application quickly and
+      produce a high-quality deliverable on an aggressive schedule for the product launch
+      at a major retail trade show. System included a component that encapsulated
+      hardware control and a finite state machine that monitored for conditions that
+      might indicate security violations.
+    - Designed and developed interfaces in COM (C++ and ATL) and Java to integrate
+      Intranet applications with existing systems such as Product Pricing, Inventory,
+      and Payment.
+    - Led team of 3 developers to produce a bill payment application using DHTML, ActiveX
+      controls, JavaScript, and Java. Execution to an aggressive schedule allowed company
+      to meet key customer opportunities. Developed and delivered training for supporting
+      and customizing the application.
+    - Pioneered the use of XML and XSLT in Intranet applications for improved flexibility
+      and interoperability. Implemented XML access to configuration data using C++ and
+      the MSXML Parser.
+    - Designed normalized database schemas using ERwin to support Intranet applications.
+      Implemented schemas in Microsoft Access, Microsoft SQL Server, and Oracle.
+      Transitioned applications from Microsoft Access to SQL Server, which improved the
+      scalability and robustness of the applications.
+
 - experience:
   role: Senior Software Engineer
-  time: 2014 - 2015
-  company: Google, London
-  details: "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing
-  elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-  pellentesque eu, pretium quis, sem."
+  time: 1994 - 1998
+  company: NCR Corporation, Duluth, GA
+  details: |
+    Key contributor to the architecture and design of complex applications. Designed and
+    developed key components. Evaluated new technologies and provided input on the
+    technological direction for new product offerings.
+    - Investigated and helped define the use of Java and other Internet technologies in
+      retail store systems. The investigation led to the formation of a task force that
+      defined a Web-based client/server architecture to be used in all retail store,
+      financial, and electronic commerce applications across the corporation.
+    - Key member of the architectural design team for a next-generation Point-of-Sale
+      application.
+    - Participated on a cross-functional architecture team that helped resolve technical
+      issues across the organization.
+    - Defined requirements, designed and developed GUI interfaces and custom ActiveX
+      controls for retail Point-of-Sale applications using C, C++ and MFC.
+
 - experience:
-  role: UI Developer
-  time: 2012 - 2014
-  company: Amazon, London
-  details: "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing
-  elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-  pellentesque eu, pretium quis, sem."
+  role: Software Engineer
+  time: 1989 - 1994
+  company: NCR Corporation, Duluth, GA
+  details: |
+    Designed and developed individual modules within a larger product. Contributed to the
+    overall design of the product.
+    - Designed, developed, and maintained DOS device drivers for specialized retail
+      peripherals on Point-of-Sale terminals using Assembly Language and C.
+    - Led the design effort to transition from Assembly Language to C for developing
+      drivers, resulting in a substantial increase in developer productivity. These
+      drivers formed the foundation for mission-critical Point-of-Sale applications run
+      by some of the world’s largest retailers.
+    - Developed DOS Extender support for Point-of-Sale terminals. The DOS Extender
+      allowed more complex Point-of-Sale applications in the DOS environment, and
+      extended the useful life of existing terminal hardware by several years.
+    - Developed Unix kernel-level network communication routines for a disk-mirroring
+      prototype.
