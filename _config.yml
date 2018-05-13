@@ -14,24 +14,24 @@ about: false # set to False or comment line if you want to remove the "How to us
 
 
 #Profile information
-name: Alan Doe
+name: Kenny Pitt
 tagline: Senior Software Engineer
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 summary: 'Talented senior developer, architect, and technical leader with over 25 years of progressive experience
 across the entire product development cycle. Recognized as an expert in analysis, architecture, design, and
 implementation of n-tier Web applications, Windows GUI applications, and Windows services. Reputation for delivering
 innovative solutions for the most complex and high profile projects. Proven ability to learn and become productive
-quickly with new technologies and environments. Outstanding technical expertise and industry knowledge in enterprise
-application security and retail technology solutions. Excellent communication and presentation skills, including
+quickly with new technologies and environments. Outstanding technical expertise and industry knowledge in Enterprise
+Application Security and Retail Technology solutions. Excellent communication and presentation skills, including
 project presentations, training sessions, and technical documentation.'
 
 #sidebar links
-email: hello@webjeda.com
-phone: 012 345 6789
-website: blog.webjeda.com #do not add http://
-linkedin: alandoe
-github: sharu725
-twitter: '@webjeda'
+email: kenny.pitt@gmail.com
+phone: 678 765 9290
+#website: blog.webjeda.com #do not add http://
+linkedin: kennypitt
+github: kpitt
+#twitter: '@kpitt'
 #Update all the sections by editing the files inside _data folder.
 
 # uncomment the next line, if you want the education section displayed in main instead of the sidebar
